@@ -1,7 +1,29 @@
-import Image from "next/image";
+//import Image from "next/image";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
+    <div className="">
+      <div className="navbar bg-base-100 justify-center">
+        <ul className="menu menu-horizontal bg-base-200 rounded-box">
+          <Link href="#about" className="btn">About Me</Link>
+          <Link href="#projects" className="btn">Projects</Link>
+          <Link href="#experience" className="btn">Experience</Link>
+          <Link href="#education" className="btn">Certs and Education</Link>
+        </ul>
+      </div>
+      <div className="w-screen h-screen">
+        
+      </div>
+      <div id="about" className="w-screen h-screen bg-white">
+        
+      </div>
+      <div></div>
+    </div>
+  );
+}
+/*
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
@@ -100,4 +122,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+} */
