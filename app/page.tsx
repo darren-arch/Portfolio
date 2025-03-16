@@ -1,23 +1,33 @@
 //import Image from "next/image";
 
+import Image from "next/image";
 import Link from "next/link";
+import ProfilePicture from './profilePic.jpg';
 
 export default function Home() {
   return (
     <div className="">
-      <div className="navbar bg-base-100 justify-center">
-        <ul className="menu menu-horizontal bg-base-200 rounded-box">
-          <Link href="#about" className="btn">About Me</Link>
-          <Link href="#projects" className="btn">Projects</Link>
-          <Link href="#experience" className="btn">Experience</Link>
-          <Link href="#education" className="btn">Certs and Education</Link>
-        </ul>
+      <div className="w-screen h-screen bg-secondary flex flex-row">
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="bg-primary text-white w-9/10 h-9/10 flex flex-col justify-center items-center rounded-2xl">
+            <h1 className="text-5xl">Darren Verhage</h1>
+            <p className="text-2xl">Get the best</p>
+          </div>
+        </div>
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <Image 
+            layout=""
+            src={ProfilePicture}
+            alt="Profile Picture"
+            sizes="45vw"
+            height={700}
+          />
+        </div>
       </div>
-      <div className="w-screen h-screen">
-        
-      </div>
-      <div id="about" className="w-screen h-screen bg-white">
-        
+      <div id="about" className="w-screen h-screen bg-primary">
+        <div className="w-screen h-1/2 flex justify-center text-white">
+          <h1 className="m-4 text-4xl">About Me</h1>
+        </div>
       </div>
       <div></div>
     </div>

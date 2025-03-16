@@ -1,9 +1,15 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* change the colors for root to change the primary or secondary
+colors
+*/
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #7BB661;	/*#031273;*/
+  --color-secondary: #d4d4d4;
 }
 
 @theme inline {
@@ -27,5 +33,5 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  
 }
